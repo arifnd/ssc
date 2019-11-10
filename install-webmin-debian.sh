@@ -29,6 +29,6 @@ echo -ne "Add webmin key..."
 apt-key add jcameron-key.asc
 echo " [DONE]"
 
-apt-get install apt-transport-https
+apt-get install apt-transport-https -y
 apt-get update
-apt-get install webmin
+apt-get install webmin -y
