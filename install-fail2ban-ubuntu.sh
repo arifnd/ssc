@@ -7,5 +7,5 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 apt-get install fail2ban -y
-sed '/FAIL2BAN_OPTS=""/ r ulimit -s 256' /etc/default/fail2ban
+sed -i '/FAIL2BAN_OPTS=\"\"/a ulimit -s 256' /etc/default/fail2ban
 systemctl restart fail2ban
