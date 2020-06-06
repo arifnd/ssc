@@ -6,6 +6,12 @@ if [[ $EUID -ne 0 ]]; then
   exit 1
 fi
 
+# if curl not installed
+if ! [ -x "$(command -v curl)" ]; then
+  apt-get install -y curl
+  echo 'curl installed.' >&2
+fi
+
 ver[1]=13.x
 ver[2]=12.x
 ver[3]=11.x
