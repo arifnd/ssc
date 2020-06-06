@@ -16,14 +16,14 @@ read choose
 case $choose in
 1)
 
-  # if wget not installed
-  if ! [ -x "$(command -v wget)" ]; then
-    echo 'Error: curl is not installed.' >&2
-    exit 1
+  # if curl not installed
+  if ! [ -x "$(command -v curl)" ]; then
+    apt-get install -y curl
+    echo 'curl installed.' >&2
   fi
 
   echo "Do "${action[$choose]}
-  wget -O - https://get.acme.sh | sh
+  curl https://get.acme.sh | sh
   ;;
 2)
   echo "Do "${action[$choose]}
