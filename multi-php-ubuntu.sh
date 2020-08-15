@@ -8,5 +8,6 @@ fi
 
 echo "Add ppa:ondrej/php by Ondřej Surý"
 
+apt-get install software-properties-common -y
 add-apt-repository ppa:ondrej/php
 apt-get update
