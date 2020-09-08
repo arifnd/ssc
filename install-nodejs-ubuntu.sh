@@ -12,11 +12,12 @@ if ! [ -x "$(command -v curl)" ]; then
   echo 'curl installed.' >&2
 fi
 
-ver[1]=13.x
-ver[2]=12.x
-ver[3]=11.x
-ver[4]=10.x
-ver[5]=8.x
+ver[1]=14.x
+ver[2]=13.x
+ver[3]=12.x
+ver[4]=11.x
+ver[5]=10.x
+ver[6]=8.x
 
 for i in "${!ver[@]}"; do echo "$i. ${ver[$i]}"; done
 
