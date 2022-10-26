@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script base on:
 # https://getcomposer.org/doc/faqs/how-to-install-composer-programmatically.md
