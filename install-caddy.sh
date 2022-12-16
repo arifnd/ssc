@@ -8,7 +8,7 @@ fi
 
 # if curl not installed
 if ! [ -x "$(command -v curl)" ]; then
-  apt-get install -y curl
+  apt-get install curl -yqq 
   echo 'curl installed.' >&2
 fi
 
